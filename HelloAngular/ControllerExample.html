@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, Agnular!</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/ControllerExample.js"></script>
+</head>
+<body ng-app="ControllerExampleApp">
+    <div ng-controller="MainController">
+        <div>
+            {{error}}
+        </div>
+        <div>
+            User Name: {{user.name}}
+        </div>
+        <div>
+            Photo: <img ng-src="{{user.avatar_url}}" />
+        </div>
+    </div>
+</body>
+</html>
